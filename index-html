@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>نظام إعلان يبيع خلال 10 دقائق | المهندس ياسر العريقي</title>
+<style>
+body{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background:#020617; color:#fff; margin:0; line-height: 1.6;}
+.container{max-width: 800px; margin:auto; padding:20px}
+.hero{text-align:center; padding:60px 20px}
+.hero h1{font-size:36px; color:#22c55e; margin-bottom: 10px;}
+.btn{background:#22c55e; color:#000; padding:18px 30px; border-radius:12px; text-decoration:none; font-weight:bold; display:inline-block; margin-top:15px; transition: 0.3s; font-size: 18px; cursor: pointer; border: none;}
+.btn:hover{background:#16a34a; transform: scale(1.05);}
+.section{margin:50px 0}
+.card{background:#0f172a; padding:20px; border-radius:12px; margin-bottom:15px; border: 1px solid #1e293b;}
+.badge{background:#ef4444; padding:6px 12px; border-radius:8px; font-size:14px; font-weight: bold;}
+.countdown{font-size:22px; color:#facc15; font-weight: bold;}
+h2{color: #f8fafc; border-right: 4px solid #22c55e; padding-right: 10px;}
+details { background: #1e293b; padding: 15px; border-radius: 10px; margin-bottom: 10px; cursor: pointer; }
+summary { font-weight: bold; list-style: none; outline: none; display: flex; justify-content: space-between; align-items: center; }
+summary::after { content: "＋"; color: #22c55e; }
+details[open] summary::after { content: "－"; }
+details p { margin-top: 10px; color: #cbd5e1; font-size: 15px; border-top: 1px solid #334155; padding-top: 10px; }
+footer { text-align: center; padding: 40px; color: #64748b; font-size: 14px; }
+</style>
+
+<script>
+let time = 3600;
+setInterval(()=>{
+    let min = Math.floor(time/60);
+    let sec = time%60;
+    let timerElement = document.getElementById("timer");
+    if(timerElement) {
+        timerElement.innerText = min+":"+(sec<10?"0":"")+sec;
+        if(time > 0) time--;
+    }
+},1000);
+</script>
+
+</head>
+<body>
+<div class="container">
+
+<div class="hero">
+<span class="badge">🔥 عرض محدود لمتابعي MarketerAI</span>
+<h1>🚀 اكتب إعلان يبيع خلال 10 دقائق فقط</h1>
+<p>نظام جاهز + ذكاء اصطناعي = مبيعات فورية</p>
+<p class="countdown">ينتهي العرض خلال: <span id="timer">60:00</span></p>
+<a href="#buy" class="btn">🔥 احصل على النظام الآن</a>
+</div>
+
+<div class="section">
+<h2>💡 الحل الذكي</h2>
+<div class="card">✅ نظام "هندسة الإعلان" الجاهز + برومبت (Prompt) مخصص.</div>
+<div class="card">✅ خطوات عملية لتحويل أي فكرة إلى نص إعلاني يبيع.</div>
+</div>
+
+<div class="section">
+<h2>❓ الأسئلة الشائعة</h2>
+<div class="card">
+    <details>
+        <summary>هل هذا النظام مناسب للمبتدئين؟</summary>
+        <p>بكل تأكيد! النظام مصمم ليكون سهل التطبيق حتى لو لم تكن لديك خبرة سابقة.</p>
+    </details>
+    <details>
+        <summary>كيف سأستلم ملفات النظام؟</summary>
+        <p>بمجرد التواصل عبر واتساب، سيتم إرسال كافة الروابط والملفات إليك مباشرة.</p>
+    </details>
+</div>
+</div>
+
+<div class="section" id="buy">
+<h2>💰 احصل عليه الآن</h2>
+<div class="card" style="text-align: center;">
+    <p>تواصل معي مباشرة لتفعيل حسابك:</p>
+    <a href="https://wa.me/967770515945?text=مرحباً_مهندس_ياسر،_أريد_الحصول_على_نظام_الإعلانات_الاحترافي" class="btn">
+        💬 اطلب الآن عبر واتساب
+    </a>
+</div>
+</div>
+
+<footer>
+    <p>&copy; 2026 جميع الحقوق محفوظة - ياسم ماركيتنج yassermarketing.com</p>
+</footer>
+
+</div>
+</body>
+</html>
